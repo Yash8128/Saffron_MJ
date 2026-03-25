@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Our 19 professional land surveying services in Ahmedabad, Gujarat. Boundary marking, plot survey, layouts, and more. Call +91 99798 76170">
+    <title>Our Services | Land Surveying Services in Ahmedabad | Saffron Surveyors</title>
+
+    <!-- Same head content as index.html (fonts, icons, meta) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-gold: #E8A000;
+            --primary-dark: #0F3460;
+            --deep-bg: #1A1A2E;
+            --off-white: #F8F9FA;
+            --body-text: #333333;
+            --muted: #666666;
+            --whatsapp: #25D366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--body-text);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* NAVIGATION (Shared) */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            height: 72px;
+            display: flex;
+            align-items: center;
+        }
+
+        .page-nav {
+            background: #fff;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            height: 72px;
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            text-decoration: none;
+        }
+
+        .logo .saffron { color: var(--primary-gold); }
+        .logo .surveyors { color: var(--primary-dark); }
+
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-gold); }
+
+        .nav-right { display: flex; align-items: center; gap: 1rem; }
+        .phone-link {
+            color: var(--primary-dark);
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .cta-button {
+            background: var(--primary-gold);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hamburger { display: none; font-size: 28px; cursor: pointer; color: #333; }
+
+        /* PAGE HERO */
+        .page-hero {
+            padding: 140px 0 80px;
+            background: var(--primary-dark);
+            color: white;
+            text-align: center;
+        }
+
+        /* SERVICES GRID */
+        .services-section { padding: 100px 0; background: white; }
+        .services-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #E8E8E8;
+            border-radius: 8px;
+            padding: 28px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 8px 32px rgba(14, 52, 96, 0.12);
+            border-top: 4px solid var(--primary-gold);
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 42px;
+            color: var(--primary-gold);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .service-card h3 {
+            color: var(--primary-dark);
+            font-size: 20px;
+            margin-bottom: 0.75rem;
+        }
+
+        /* FOOTER (Shared) */
+        footer { background: var(--deep-bg); color: white; padding: 80px 0 30px; }
+        .footer-grid { max-width: 1280px; margin: 0 auto; padding: 0 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 3rem; }
+        
+        .whatsapp-float {
+            position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; background: var(--whatsapp);
+            color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 28px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 9999; text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger { display: block; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="page-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="saffron">SAFFRON</span>
+                <span class="surveyors">SURVEYORS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="tel:+919979876170" class="phone-link"><i class="fas fa-phone"></i> +91 99798 76170</a>
+                <a href="inquiry.html" class="cta-button">Get Quote</a>
+                <div class="hamburger" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">All Our 19 Surveying Services</h1>
+            <p data-aos="fade-up" data-aos-delay="200" style="font-size: 1.2rem; opacity: 0.9; margin-top: 1rem;">Expert Precision for Every Land Surveying Need</p>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="services-grid" id="allServicesGrid">
+            <!-- Populated by JS using the full list -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid container">
+            <div>
+                <div class="logo" style="color: white; font-size: 28px; margin-bottom: 1rem;">
+                    <span class="saffron">SAFFRON</span>
+                    <span class="surveyors">SURVEYORS</span>
+                </div>
+                <p>Gujarat's most trusted name in land surveying. Precision, professionalism, and advanced technology since 2006.</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem;">Services</h4>
+                <ul style="list-style: none; line-height: 2; font-size: 0.9rem;">
+                    <li>Boundary Marking</li>
+                    <li>FP Marking</li>
+                    <li>Plot Demarcation</li>
+                    <li>Contour Survey</li>
+                    <li>Layout Marking</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+                <ul style="list-style: none; line-height: 2;">
+                    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                    <li><a href="services.html" style="color: white; text-decoration: none;">Services</a></li>
+                    <li><a href="process.html" style="color: white; text-decoration: none;">Process</a></li>
+                    <li><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
+                    <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem;">Contact</h4>
+                <p>saffronsurveyors@gmail.com</p>
+                <p>+91 99798 76170</p>
+                <p>Gota, Ahmedabad, Gujarat</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 4rem; opacity: 0.7; font-size: 0.9rem;">
+            © 2026 Saffron Surveyors • All Rights Reserved
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919979876170" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        
+        const servicesData = [
+            { icon: "fa-map-pin", title: "Boundary Marking", desc: "Accurate boundary demarcation for plots and farms" },
+            { icon: "fa-ruler", title: "Layout Marking", desc: "Precise layout marking for construction projects" },
+            { icon: "fa-mountain", title: "Contour Survey", desc: "Detailed contour and topographic analysis" },
+            { icon: "fa-stone", title: "Survey Stone Marking", desc: "Survey stone placement and verification" },
+            { icon: "fa-columns", title: "Column Marking", desc: "Column and structural point marking" },
+            { icon: "fa-drafting-compass", title: "Detailed Survey", desc: "Comprehensive site and land detailed survey" },
+            { icon: "fa-map", title: "FP Marking", desc: "Final plot marking as per approved plans" },
+            { icon: "fa-road", title: "Centre Line Demarcation", desc: "Centre line marking for roads and buildings" },
+            { icon: "fa-search", title: "Reference Survey", desc: "Reference and control point surveys" },
+            { icon: "fa-draw-polygon", title: "Plot Demarcation", desc: "Plot boundary and demarcation services" },
+            { icon: "fa-thumbtack", title: "Pile Point Marking", desc: "Pile foundation point marking" },
+            { icon: "fa-map-marked", title: "Site Survey", desc: "Full site measurement and analysis" },
+            { icon: "fa-cubes", title: "Block Demarcation", desc: "Block and sector demarcation" },
+            { icon: "fa-road", title: "Road Marking", desc: "Road alignment and marking surveys" },
+            { icon: "fa-draw-polygon", title: "Plot Survey", desc: "Individual plot survey and measurement" },
+            { icon: "fa-wall", title: "Compound Wall Marking", desc: "Compound wall boundary marking" },
+            { icon: "fa-building", title: "Club House Marking", desc: "Clubhouse and amenity marking" },
+            { icon: "fa-cube", title: "Block Marking", desc: "Block level marking and layout" },
+            { icon: "fa-tree", title: "Tree Marking", desc: "Tree survey and marking services" }
+        ];
+
+        function populate() {
+            const container = document.getElementById('allServicesGrid');
+            servicesData.forEach((s, i) => {
+                const card = document.createElement('div');
+                card.className = 'service-card';
+                card.setAttribute('data-aos', 'fade-up');
+                card.setAttribute('data-aos-delay', (i % 6) * 100);
+                card.innerHTML = `
+                    <i class="fas ${s.icon} service-icon"></i>
+                    <h3>${s.title}</h3>
+                    <p>${s.desc}</p>
+                    <a href="inquiry.html" class="cta-button" style="margin-top: 1.5rem; display: inline-block;">Book Now</a>
+                `;
+                container.appendChild(card);
+            });
+        }
+        window.onload = populate;
+
+        function toggleMobileMenu() {
+            alert("Mobile Menu coming soon!");
+        }
+    </script>
+</body>
+
+</html>

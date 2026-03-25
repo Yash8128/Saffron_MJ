@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Saffron Surveyors in Ahmedabad, Gujarat. Professional land surveying services. Office address: Vandemataram Arcade, Gota. Call +91 99798 76170.">
+    <title>Contact Us | Saffron Surveyors Ahmedabad | Land Survey Expert</title>
+
+    <!-- Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-gold: #E8A000;
+            --primary-dark: #0F3460;
+            --deep-bg: #1A1A2E;
+            --off-white: #F8F9FA;
+            --body-text: #333333;
+            --muted: #666666;
+            --whatsapp: #25D366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--body-text);
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* NAVIGATION (Shared) */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            height: 72px;
+            display: flex;
+            align-items: center;
+        }
+
+        .page-nav {
+            background: #fff;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            height: 72px;
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            text-decoration: none;
+        }
+
+        .logo .saffron {
+            color: var(--primary-gold);
+        }
+
+        .logo .surveyors {
+            color: var(--primary-dark);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary-gold);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .phone-link {
+            color: var(--primary-dark);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .cta-button {
+            background: var(--primary-gold);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 28px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        /* PAGE HERO */
+        .page-hero {
+            padding: 140px 0 80px;
+            background: var(--primary-dark);
+            color: white;
+            text-align: center;
+        }
+
+        /* CONTACT SECTION */
+        .contact-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .contact-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info {
+            background: var(--off-white);
+            padding: 3rem;
+            border-radius: 12px;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            color: var(--primary-gold);
+            width: 40px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 1.2rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 16px;
+            background: var(--primary-dark);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #1A3A6B;
+        }
+
+        /* FOOTER (Shared) */
+        footer {
+            background: var(--deep-bg);
+            color: white;
+            padding: 80px 0 30px;
+        }
+
+        .footer-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 3rem;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            background: var(--whatsapp);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            z-index: 9999;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="page-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="saffron">SAFFRON</span>
+                <span class="surveyors">SURVEYORS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="tel:+919979876170" class="phone-link"><i class="fas fa-phone"></i> +91 99798 76170</a>
+                <a href="inquiry.html" class="cta-button">Get Quote</a>
+                <div class="hamburger" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Get in Touch With Us</h1>
+            <p data-aos="fade-up" data-aos-delay="200" style="font-size: 1.2rem; opacity: 0.9; margin-top: 1rem;">We're
+                Here to Assist Your Surveying Needs Across Gujarat</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-info" data-aos="fade-right">
+                <h2 style="margin-bottom: 2rem; color: var(--primary-dark);">Contact Details</h2>
+
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt info-icon"></i>
+                    <div>
+                        <h4 style="color: var(--primary-dark);">Address</h4>
+                        <p>19-23, 4th Floor, Vandemataram Arcade,<br>Gota, Ahmedabad - 382481, Gujarat</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone-alt info-icon"></i>
+                    <div>
+                        <h4 style="color: var(--primary-dark);">Phone</h4>
+                        <p><a href="tel:+919979876170" style="color: inherit; text-decoration: none;">+91 99798
+                                76170</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope info-icon"></i>
+                    <div>
+                        <h4 style="color: var(--primary-dark);">Email</h4>
+                        <p>saffronsurveyors@gmail.com</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.3601718018445!2d72.53106197531548!3d23.0839069791307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e830e6a17b8f9%3A0x8673322aa0f1882!2sVandemataram%20Arcade!5e0!3m2!1sen!2sin!4v1711394000000!5m2!1sen!2sin"
+                        width="100%" height="250" style="border:0; border-radius:8px;" allowfullscreen=""
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="contact-form" data-aos="fade-left">
+                <h2 style="margin-bottom: 2rem; color: var(--primary-dark);">Send a Message</h2>
+                <form onsubmit="event.preventDefault(); alert('Message sent!');">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone Number" required>
+                    <textarea rows="6" placeholder="How can we help you?" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid container">
+            <div>
+                <div class="logo" style="color: white; font-size: 28px; margin-bottom: 1rem;">
+                    <span class="saffron">SAFFRON</span>
+                    <span class="surveyors">SURVEYORS</span>
+                </div>
+                <p>Gujarat's most trusted name in land surveying. Precision, professionalism, and advanced technology
+                    since 2006.</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+                <ul style="list-style: none; line-height: 2;">
+                    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                    <li><a href="services.html" style="color: white; text-decoration: none;">Services</a></li>
+                    <li><a href="process.html" style="color: white; text-decoration: none;">Process</a></li>
+                    <li><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
+                    <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem;">Contact</h4>
+                <p>saffronsurveyors@gmail.com</p>
+                <p>+91 99798 76170</p>
+                <p>Gota, Ahmedabad, Gujarat</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 4rem; opacity: 0.7; font-size: 0.9rem;">
+            © 2026 Saffron Surveyors • All Rights Reserved
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919979876170" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        function toggleMobileMenu() { alert("Mobile Menu coming soon!"); }
+    </script>
+</body>
+
+</html>

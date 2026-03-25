@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Saffron Surveyors | Architectural Excellence</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Inter:wght@400;500;600&amp;family=Work+Sans:wght@400;500&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-secondary-container": "#656464",
+                        "secondary-fixed": "#e4e2e1",
+                        "surface-dim": "#dadada",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container": "#eeeeee",
+                        "primary": "#3b6a00",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#5e5e5e",
+                        "secondary-container": "#e4e2e1",
+                        "primary-container": "#74b72c",
+                        "tertiary-container": "#a6a5a5",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-primary-fixed": "#0e2000",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#424938",
+                        "background": "#f9f9f9",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "inverse-primary": "#94da4c",
+                        "primary-fixed-dim": "#94da4c",
+                        "on-tertiary-container": "#3b3b3b",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#e4e2e2",
+                        "surface-tint": "#3b6a00",
+                        "outline-variant": "#c1cab3",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "secondary": "#5f5e5e",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "on-secondary-fixed-variant": "#474747",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#aef765",
+                        "on-background": "#1a1c1c",
+                        "on-surface": "#1a1c1c",
+                        "surface-bright": "#f9f9f9",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-low": "#f3f3f4",
+                        "surface": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#2b5000",
+                        "outline": "#727a66",
+                        "on-primary-container": "#244300",
+                        "on-error": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Work Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .editorial-shadow {
+            box-shadow: 0 24px 48px -12px rgba(26, 28, 28, 0.04);
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopAppBar -->
+    <header
+        class="flex justify-between items-center w-full px-6 py-4 sticky top-0 z-50 bg-[#f9f9f9]/80 dark:bg-zinc-950/80 glass-nav">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-[#3b6a00] dark:text-[#74b72c]"
+                data-icon="architecture">architecture</span>
+            <span class="text-lg font-extrabold tracking-tighter text-[#1a1c1c] dark:text-white font-headline">Saffron
+                Surveyors</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="font-label text-[11px] uppercase tracking-wider text-[#3b6a00] dark:text-[#74b72c]"
+                href="#">Home</a>
+            <a class="font-label text-[11px] uppercase tracking-wider text-[#1a1c1c]/60 hover:text-[#3b6a00] transition-colors"
+                href="#">Services</a>
+            <a class="font-label text-[11px] uppercase tracking-wider text-[#1a1c1c]/60 hover:text-[#3b6a00] transition-colors"
+                href="#">Projects</a>
+            <a class="font-label text-[11px] uppercase tracking-wider text-[#1a1c1c]/60 hover:text-[#3b6a00] transition-colors"
+                href="#">Profile</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <button
+                class="material-symbols-outlined text-[#1a1c1c] dark:text-zinc-400 p-2 hover:bg-[#f3f3f4] rounded-full transition-colors"
+                data-icon="notifications">notifications</button>
+            <button
+                class="bg-gradient-to-br from-[#3b6a00] to-[#74b72c] text-white px-6 py-2 rounded-lg font-label text-[12px] uppercase tracking-widest font-bold active:scale-95 transition-all">Get
+                a Quote</button>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section: The Architectural Ledger -->
+        <section class="relative min-height-[921px] flex items-center pt-20 pb-32 px-6 md:px-12 overflow-hidden">
+            <div class="container mx-auto grid grid-cols-12 gap-8 items-center">
+                <div class="col-span-12 lg:col-span-7 z-10">
+                    <span class="font-label text-primary font-bold tracking-[0.2em] uppercase text-xs mb-6 block">Expert
+                        Surveying, Simplified</span>
+                    <h1
+                        class="font-headline text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-on-surface leading-[0.9] mb-8">
+                        Precision Measuring for <span class="text-primary-container">Architectural Excellence.</span>
+                    </h1>
+                    <p
+                        class="text-secondary text-lg md:text-xl max-w-xl mb-12 leading-relaxed border-l-4 border-primary-container pl-6">
+                        Bridging the gap between raw terrain and architectural vision. We provide the technical data
+                        foundations required for India's next generation of landmarks.
+                    </p>
+                    <div class="flex flex-wrap gap-6">
+                        <button
+                            class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-5 rounded-lg font-headline font-bold text-lg editorial-shadow hover:scale-[1.02] transition-transform">
+                            Initiate Inquiry
+                        </button>
+                        <div class="flex items-center gap-4">
+                            <div class="flex -space-x-3">
+                                <div
+                                    class="w-12 h-12 rounded-full border-4 border-surface overflow-hidden bg-surface-container">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="professional portrait of a senior surveyor in high-visibility gear with a confident expression"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwFf6Zo_C21X56fLzCQeH9lpNd6ThcZZ0bFU8BKezofywPOkLGxjkJywsgGiqWE1Pz_LgbkLkou41frhsvLfKsqytNzBwC613e8Nwa_hfj8gdfVJz5T84C-0q_2qBOLJLnpMqPKWkCPRwaxbGO5qrN5vKgMFjeMhSTesnvgWuqhYjpX1VuiKSL5SEeOkDjl7xgKCn2P3nFgE2gMAINLnM7F45iz6fPEQzzfoo575Ic4CPTjRYqLvQ5QnoEEkpdZ4Ynvq_m5uZRooWs" />
+                                </div>
+                                <div
+                                    class="w-12 h-12 rounded-full border-4 border-surface overflow-hidden bg-surface-container">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="professional portrait of a female civil engineer holding a tablet on a construction site"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8SZNWDQlX_B_qm4ikKbwJYg2xaQLZ_9MVn8-IxqKXjlqjSizYZMZFypgCanoXI0tnAnIBd--bsItLRwcd0uGTuY8vxTS_DVoyBtr9Doi6AEjIJ3RLv-QxVxw4A_QNSPgPXLyPH3aO4_uXqKE4stvvBKnsLksJ5UIlGYDdKJ5altSq_mVTRpqDWO189qBic0-W_znjhkGKpOrmP4MpndfAdlm3NpWuLA0ywBvK6kWw237MFKq5sVsvS-_lnAhWvkFqQ3FbabwVfofq" />
+                                </div>
+                            </div>
+                            <span class="text-sm font-medium text-secondary">Trusted by <span
+                                    class="text-on-surface font-bold">500+</span> Developers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-5 relative mt-12 lg:mt-0">
+                    <div class="relative aspect-[4/5] rounded-[2rem] overflow-hidden editorial-shadow group">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            data-alt="cinematic close-up of a high-end digital total station surveying instrument against a blurred construction background at dawn"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlJ8rwhd3MzoQHQO6nMkh6rgRl82ABXPXScnRRaQhXfE031qPq7qZTmvMYpQ70cnllZp4oGUQ7f61MOS2-TmXVpucYa6Rke6O-A1bmT9DNkF6TG9C_i8Ree3DwYwvZcHIxjAkKfroCJgQc6brghrLg0bYUnUBiao7AHDPMjJjdIoUAf-sDdnkgyxucMZJYwxthfLwXqhpz9CSwq-ZBuFDt0HQzyB7aqWprYqCIsnQQiyndjqDjzR09nAVhJlHWs6Snw6JZ6ggb9D18" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+                        <div class="absolute bottom-8 left-8 right-8 p-6 bg-surface/80 glass-nav rounded-xl">
+                            <div class="flex items-center justify-between mb-2">
+                                <span
+                                    class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">Current
+                                    Project</span>
+                                <span class="text-[10px] text-secondary">Ref: SR-992</span>
+                            </div>
+                            <p class="font-headline font-bold text-on-surface">Ahmedabad Metro Extension</p>
+                        </div>
+                    </div>
+                    <!-- Decorative Asymmetric Element -->
+                    <div
+                        class="absolute -top-12 -right-12 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl -z-10">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Trust Section -->
+        <section class="bg-surface-container-low py-24">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="font-headline text-4xl font-extrabold tracking-tight mb-6">A Legacy of Accuracy</h2>
+                        <p class="text-secondary leading-relaxed mb-8 text-lg">
+                            Saffron Surveyors stands as an authoritative pillar in the Indian surveying landscape. RICS
+                            certified and headquartered in Ahmedabad, our local expertise is augmented by a pan-India
+                            reach, ensuring that every measurement meets global standards of excellence.
+                        </p>
+                        <div class="grid grid-cols-2 gap-8">
+                            <div class="p-6 bg-surface-container-lowest rounded-xl">
+                                <span class="text-3xl font-extrabold text-primary font-headline block mb-1">15+</span>
+                                <span class="text-xs font-label uppercase tracking-widest text-secondary">Years
+                                    Excellence</span>
+                            </div>
+                            <div class="p-6 bg-surface-container-lowest rounded-xl">
+                                <span
+                                    class="text-3xl font-extrabold text-primary font-headline block mb-1">Ahmedabad</span>
+                                <span class="text-xs font-label uppercase tracking-widest text-secondary">Core
+                                    Operations</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="aspect-square bg-surface-container-highest rounded-2xl overflow-hidden">
+                            <img class="w-full h-full object-cover"
+                                data-alt="modern skyscraper architecture with clean geometric lines and reflective glass against a bright blue sky"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNrgjP_wzeAoN5pB5VGlGcDFEZGqOC3WBqOMnTjTTbI4zsW6xKMsFpDeKTCX87oW9MsHo93K_0c6DRxyczzosK2KzoPY3-rcF00ZCDtWUb2OdYqb82R3fchDocn_6nridTSNbR205y6V2kaZRMxD1vxFycimgwo7eQVCt4zQZvwvYdH-OCnUf3i3_IgZZIWJw7MXU2Wy3s5MGFwn3zNnJ6OMAxBOv27hA5hUV4C9Zi2kH69PIoc6kmu9f0lb87J1I7hfTaL7hDvyiy" />
+                        </div>
+                        <div class="aspect-square bg-primary rounded-2xl p-8 flex flex-col justify-end text-white">
+                            <span class="material-symbols-outlined text-4xl mb-4" data-icon="verified">verified</span>
+                            <p class="font-headline font-bold text-xl">RICS Certified Professionals</p>
+                        </div>
+                        <div class="aspect-square bg-surface-container-highest rounded-2xl overflow-hidden col-span-2">
+                            <img class="w-full h-full object-cover"
+                                data-alt="wide shot of an expansive construction site at dusk with cranes and foundations visible"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMMcn-VMqQqAEAmPgtP-lH6SdYAEDnsF0S8msuklFXT7ixkWr8JvEPPQXctYabSzCsIgqwgj1WFYYn25TIVtCyhRzkwZXoqyhfUT6gy7Axceic4JO9PM4368AnaH6WrumiLonRWR6mUMNAWhc3b08Wal3oR5EN21Mq1Wix6rZTjs66hhnHMKXWm2KCqfd4U3sn0oLZBi5cAR3-qjpLD3PvEnoveWAtLDlzvovpNVeIzf_xtukzBW1JQC-53THjckfW2CV7v_NLA25N" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Specialist Surveying Solutions (Bento Grid) -->
+        <section class="py-32 bg-surface">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                    <div class="max-w-2xl">
+                        <span
+                            class="font-label text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Our
+                            Portfolio</span>
+                        <h2 class="font-headline text-5xl font-extrabold tracking-tight">Specialist Surveying Solutions
+                        </h2>
+                    </div>
+                    <p class="text-secondary max-w-sm font-medium">Tailored methodologies for complex infrastructure,
+                        commercial developments, and residential planning.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="md:col-span-2 bg-surface-container-low rounded-xl overflow-hidden group">
+                        <div class="grid grid-cols-1 md:grid-cols-2 h-full">
+                            <div class="p-10 flex flex-col justify-between">
+                                <div>
+                                    <span class="material-symbols-outlined text-primary mb-6 text-3xl"
+                                        data-icon="landscape">landscape</span>
+                                    <h3 class="font-headline text-2xl font-bold mb-4">Topographical Mapping</h3>
+                                    <p class="text-secondary mb-6">High-precision contouring and feature mapping for
+                                        large-scale urban development projects.</p>
+                                </div>
+                                <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all"
+                                    href="#">
+                                    Explore Solution <span class="material-symbols-outlined">arrow_forward</span>
+                                </a>
+                            </div>
+                            <div class="relative overflow-hidden h-64 md:h-full">
+                                <img class="w-full h-full object-cover"
+                                    data-alt="digital 3D point cloud model of a city terrain with topographical elevation data visualizations"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl-E0TXJ5MS5J3Gs12moWkIxLSGI3KjlioWGEl3gtqRLolL5qCH-RwlzTOlcXBxvFmG36GmDseWdS-X5FjwenP6CO03BnWSje0jtSchyy2qoxZDpOGSKCyJe8j7u3V3ye0ZRttGBfmH0ueA7HDLkifUqqClQy0FIpi4hiEOUHP2t4_USOZPr5BbaqJXDRUCb73ZZn2ZkVYpBwtSQ2tNHZY8L-VuGfzNElSvYAlJ1S7g7c9NJnfn8Z_FeCcER-OB2Y5L5zAaKuk6s4W" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-surface-container-low p-10 rounded-xl flex flex-col justify-between group">
+                        <div>
+                            <span class="material-symbols-outlined text-primary mb-6 text-3xl"
+                                data-icon="apartment">apartment</span>
+                            <h3 class="font-headline text-2xl font-bold mb-4">Measured Building Surveys</h3>
+                            <p class="text-secondary">Millimeter-perfect internal and external floor plans for heritage
+                                and modern structures.</p>
+                        </div>
+                        <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all mt-8"
+                            href="#">
+                            Details <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-on-surface text-surface p-10 rounded-xl flex flex-col justify-between group">
+                        <div>
+                            <span class="material-symbols-outlined text-primary-container mb-6 text-3xl"
+                                data-icon="precision_manufacturing">precision_manufacturing</span>
+                            <h3 class="font-headline text-2xl font-bold mb-4">Engineering Set-Out</h3>
+                            <p class="text-secondary-fixed">Ensuring architectural designs are translated to the ground
+                                with absolute spatial integrity.</p>
+                        </div>
+                        <a class="text-primary-container font-bold flex items-center gap-2 group-hover:gap-4 transition-all mt-8"
+                            href="#">
+                            Details <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="md:col-span-2 bg-surface-container-low rounded-xl overflow-hidden group">
+                        <div class="grid grid-cols-1 md:grid-cols-2 h-full">
+                            <div class="relative overflow-hidden h-64 md:h-full">
+                                <img class="w-full h-full object-cover"
+                                    data-alt="professional drone with multispectral camera flying over a green construction field for aerial surveying"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_lUrh7d3N2yI-CDxeUbD2-jGb74zNZLHzJJQoHOVc9y0CramCtqCdbxCOr72Q6DpegKQxPFNd_zI7r4lU99tVwa9Cs2cHX899Q6whNH-5d6hJFw8tifTQwzRRNFi5WwLFtoAzMy3Sb7vvirY31XaeolnCOaD6_bic_P2d4X-Iuv_S7ugjC8QRZnN0zlgOzxHbxZSpPuMudfkx0A5tR07qYRAps41w_MOtgaMNCzGdGzFVBdu-FaJy2e5aHt6Q5yOe6iYlbCONfotp" />
+                            </div>
+                            <div class="p-10 flex flex-col justify-between">
+                                <div>
+                                    <span class="material-symbols-outlined text-primary mb-6 text-3xl"
+                                        data-icon="nest_remote_comfort_sensor">nest_remote_comfort_sensor</span>
+                                    <h3 class="font-headline text-2xl font-bold mb-4">UAV &amp; LiDAR Scanning</h3>
+                                    <p class="text-secondary mb-6">Next-generation rapid data collection for unreachable
+                                        terrain and complex facades.</p>
+                                </div>
+                                <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all"
+                                    href="#">
+                                    Explore Solution <span class="material-symbols-outlined">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Integrated Inquiry Form -->
+        <section class="py-32 bg-surface-container-low">
+            <div class="container mx-auto px-6">
+                <div
+                    class="bg-surface-container-lowest rounded-[2rem] editorial-shadow overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-12 md:p-20">
+                        <h2 class="font-headline text-4xl font-extrabold tracking-tight mb-4">Refine Your Project
+                            Foundation</h2>
+                        <p class="text-secondary mb-12">Submit your site details for a tailored surveying strategy and
+                            comprehensive quote from our lead surveyors.</p>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label
+                                        class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Full
+                                        Name</label>
+                                    <input
+                                        class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/20 focus:border-b-2 focus:border-primary transition-all"
+                                        placeholder="Aarav Sharma" type="text" />
+                                </div>
+                                <div class="space-y-2">
+                                    <label
+                                        class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Organization</label>
+                                    <input
+                                        class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/20 focus:border-b-2 focus:border-primary transition-all"
+                                        placeholder="Infrastructure Ltd." type="text" />
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Project
+                                    Type</label>
+                                <select
+                                    class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/20 transition-all text-secondary">
+                                    <option>Select Survey Type</option>
+                                    <option>Topographical Survey</option>
+                                    <option>Measured Building Survey</option>
+                                    <option>Boundary Dispute</option>
+                                    <option>BIM / LiDAR Scanning</option>
+                                </select>
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Project
+                                    Details</label>
+                                <textarea
+                                    class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/20 focus:border-b-2 focus:border-primary transition-all"
+                                    placeholder="Briefly describe your site and required deliverables..."
+                                    rows="4"></textarea>
+                            </div>
+                            <button
+                                class="w-full bg-gradient-to-br from-primary to-primary-container text-white py-5 rounded-lg font-headline font-bold text-lg editorial-shadow hover:brightness-110 active:scale-95 transition-all"
+                                type="submit">
+                                Request Professional Quote
+                            </button>
+                        </form>
+                    </div>
+                    <div class="hidden lg:block relative">
+                        <img class="w-full h-full object-cover"
+                            data-alt="monochrome architectural detail of a concrete spiral staircase with sharp shadows and highlights"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr9hP3QlIyMiM81-QVnjCov8-OLmZcTJqEM2iGvj2pASu3ZYKjAw5BEZ7mEqhP0pIWmtdYQBSDW7hUQeBKKTqF3ICijGQy3qyEoxnv595tgvLerq39-Cj42O0Mo-v4YqzqqlsjonZJoqJ2u4FXvv3-jnqXV_UDL5iKrrh1py6JAhy1iYOTXNZpym3cHZO5N9rlzGHHq2D_Pim-7sQenTGmsxaHiCwhSpuMhF99vBlLFNJhX2iK5jAcZTddK1cEY8ddeQz2t0SXMV5O" />
+                        <div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+                        <div class="absolute inset-0 flex items-center justify-center p-20">
+                            <div class="bg-surface/90 glass-nav p-10 rounded-2xl editorial-shadow max-w-xs">
+                                <span class="material-symbols-outlined text-primary text-5xl mb-6"
+                                    data-icon="quick_reference_all">quick_reference_all</span>
+                                <p class="font-headline font-bold text-xl mb-4 text-on-surface">Guaranteed 24-hour
+                                    Response</p>
+                                <p class="text-sm text-secondary leading-relaxed">Our technical team reviews every
+                                    inquiry within one business day to provide accurate feasibility assessments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-on-surface text-surface py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-8">
+                        <span class="material-symbols-outlined text-primary-container"
+                            data-icon="architecture">architecture</span>
+                        <span class="text-xl font-extrabold tracking-tighter font-headline">Saffron Surveyors</span>
+                    </div>
+                    <p class="text-secondary-fixed text-sm leading-relaxed">
+                        Setting the benchmark for precision in the built environment. RICS Certified excellence since
+                        2009.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-headline font-bold mb-6 text-primary-container">Services</h4>
+                    <ul class="space-y-4 text-sm text-secondary-fixed">
+                        <li><a class="hover:text-white transition-colors" href="#">Boundary Mapping</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Volumetric Analysis</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Utility Mapping</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">BIM Modelling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-headline font-bold mb-6 text-primary-container">Company</h4>
+                    <ul class="space-y-4 text-sm text-secondary-fixed">
+                        <li><a class="hover:text-white transition-colors" href="#">Our Ethos</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Project Archive</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Careers</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-headline font-bold mb-6 text-primary-container">Global Standards</h4>
+                    <p class="text-xs text-secondary-fixed mb-4">Headquarters: Satellite, Ahmedabad, Gujarat 380015</p>
+                    <div class="flex gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-surface/10 flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-lg bg-surface/10 flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <span class="material-symbols-outlined text-sm" data-icon="call">call</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-surface/10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[10px] font-label uppercase tracking-widest text-secondary-fixed">© 2024 Saffron
+                    Surveyors Private Limited. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="text-[10px] font-label uppercase tracking-widest text-secondary-fixed hover:text-white"
+                        href="#">Privacy Policy</a>
+                    <a class="text-[10px] font-label uppercase tracking-widest text-secondary-fixed hover:text-white"
+                        href="#">Terms of Engagement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav
+        class="md:hidden fixed bottom-0 left-0 right-0 z-40 flex justify-around items-center px-4 pb-2 pt-2 bg-[#f9f9f9]/80 dark:bg-zinc-950/80 glass-nav rounded-2xl mx-4 mb-6 editorial-shadow">
+        <a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#3b6a00] to-[#74b72c] text-white rounded-xl px-4 py-2 scale-90 transition-transform duration-300"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="home">home</span>
+            <span class="font-['Work_Sans'] text-[11px] uppercase tracking-wider">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-[#1a1c1c]/60 dark:text-zinc-500 py-2 hover:text-[#3b6a00]"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="foundation">foundation</span>
+            <span class="font-['Work_Sans'] text-[11px] uppercase tracking-wider">Services</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-[#1a1c1c]/60 dark:text-zinc-500 py-2 hover:text-[#3b6a00]"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="layers">layers</span>
+            <span class="font-['Work_Sans'] text-[11px] uppercase tracking-wider">Projects</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-[#1a1c1c]/60 dark:text-zinc-500 py-2 hover:text-[#3b6a00]"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="person">person</span>
+            <span class="font-['Work_Sans'] text-[11px] uppercase tracking-wider">Profile</span>
+        </a>
+    </nav>
+</body>
+
+</html>

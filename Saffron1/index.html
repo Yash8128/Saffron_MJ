@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Saffron Surveyors offers professional land surveying services in Ahmedabad, Gujarat. FP Marking, Plot Survey, Layout Marking, Contour Survey & more. Call +91 99798 76170">
+    <meta name="keywords"
+        content="land survey Ahmedabad, FP marking Gujarat, plot survey Ahmedabad, boundary marking Gujarat, survey company Ahmedabad">
+    <title>Saffron Surveyors</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Land Survey Services in Ahmedabad | Saffron Surveyors">
+    <meta property="og:description"
+        content="Saffron Surveyors offers professional land surveying services in Ahmedabad, Gujarat. FP Marking, Plot Survey, Layout Marking, Contour Survey & more. Call +91 99798 76170">
+    <meta property="og:image" content="https://picsum.photos/id/1015/1200/630">
+    <meta property="og:url" content="https://www.saffronsurveyors.in/">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Nunito+Sans:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-gold: #E8A000;
+            --primary-dark: #0F3460;
+            --deep-bg: #1A1A2E;
+            --off-white: #F8F9FA;
+            --body-text: #333333;
+            --muted: #666666;
+            --whatsapp: #25D366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--body-text);
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .nav-link {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            height: 72px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav.scrolled {
+            background: #fff;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            height: 72px;
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .logo .saffron {
+            color: var(--primary-gold);
+        }
+
+        .logo .surveyors {
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        nav.scrolled .logo .surveyors {
+            color: var(--primary-dark);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav.scrolled .nav-links a {
+            color: #333;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-gold);
+        }
+
+        .nav-links a.active {
+            color: var(--primary-gold);
+            position: relative;
+        }
+
+        nav.scrolled .nav-links a.active {
+            color: var(--primary-dark);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--primary-gold);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .phone-link {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.3s ease;
+        }
+
+        nav.scrolled .phone-link {
+            color: var(--primary-dark);
+        }
+
+        .cta-button {
+            background: var(--primary-gold);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #C98A00;
+            transform: scale(1.02);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        nav.scrolled .hamburger {
+            color: #333;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            background: linear-gradient(135deg, #1A1A2E 0%, #0F3460 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 6vw, 72px);
+            margin-bottom: 1rem;
+        }
+
+        .hero .subheadline {
+            font-size: 20px;
+            font-family: 'Inter', sans-serif;
+            opacity: 0.85;
+            max-width: 720px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero .btn-primary {
+            background: var(--primary-gold);
+            color: white;
+            padding: 16px 40px;
+            font-size: 18px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .hero .btn-primary:hover {
+            background: #C98A00;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(232, 160, 0, 0.4);
+        }
+
+        .hero .btn-secondary {
+            border: 2px solid white;
+            color: white;
+            padding: 16px 40px;
+            font-size: 18px;
+            border-radius: 4px;
+            background: transparent;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .hero .btn-secondary:hover {
+            background: white;
+            color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* STATS STRIP */
+        .stats {
+            background: var(--primary-dark);
+            color: white;
+            padding: 3rem 0;
+        }
+
+        .stats-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .stat-number {
+            font-size: 2.8rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            color: var(--primary-gold);
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* SERVICES */
+        .services {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            color: var(--primary-dark);
+        }
+
+        .services-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #E8E8E8;
+            border-radius: 8px;
+            padding: 28px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-card:hover {
+            box-shadow: 0 8px 32px rgba(14, 52, 96, 0.12);
+            border-left: 4px solid var(--primary-gold);
+            transform: translateY(-4px);
+        }
+
+        .service-icon {
+            font-size: 42px;
+            color: var(--primary-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            color: var(--primary-dark);
+            font-size: 20px;
+            margin-bottom: 0.75rem;
+        }
+
+        /* PROCESS */
+        .process {
+            background: var(--off-white);
+            padding: 100px 0;
+        }
+
+        .timeline {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            right: 50px;
+            height: 3px;
+            background: var(--primary-gold);
+            z-index: 1;
+            display: none;
+        }
+
+        @media (min-width: 1024px) {
+            .timeline::before {
+                display: block;
+            }
+        }
+
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            position: relative;
+            z-index: 2;
+            justify-content: center;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 160px;
+            max-width: 240px;
+            text-align: center;
+            position: relative;
+        }
+
+        .step-circle {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-gold);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+            box-shadow: 0 4px 15px rgba(232, 160, 0, 0.3);
+            position: relative;
+            z-index: 3;
+        }
+
+        .step h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step p {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        /* WHY CHOOSE US */
+        .why {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .why-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            background: var(--deep-bg);
+            color: white;
+            padding: 100px 0;
+        }
+
+        .testimonial-card {
+            background: #0F3460;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        /* CLIENT LOGOS */
+        .clients {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-flex;
+            animation: marquee 30s linear infinite;
+        }
+
+        /* CTA STRIP */
+        .cta-strip {
+            background: linear-gradient(90deg, #0F3460 0%, #1A3A6B 100%);
+            color: white;
+            padding: 4rem 2rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--deep-bg);
+            color: white;
+            padding: 80px 0 30px;
+        }
+
+        .footer-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 3rem;
+        }
+
+        /* WHATSAPP FLOATING BUTTON */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            background: var(--whatsapp);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 9999;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Utility */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="saffron">SAFFRON</span>
+                <span class="surveyors">SURVEYORS</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="tel:+919979876170" class="phone-link">
+                    <i class="fas fa-phone"></i> +91 99798 76170
+                </a>
+                <a href="inquiry.html" class="cta-button">Get Quote</a>
+                <div class="hamburger" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            style="display: none; background: white; position: absolute; top: 72px; left: 0; right: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.1); padding: 1rem;">
+            <ul style="list-style: none;">
+                <li><a href="index.html"
+                        style="display: block; padding: 1rem; color: #333; text-decoration: none;">Home</a></li>
+                <li><a href="services.html"
+                        style="display: block; padding: 1rem; color: #333; text-decoration: none;">Services</a></li>
+                <li><a href="process.html"
+                        style="display: block; padding: 1rem; color: #333; text-decoration: none;">Process</a></li>
+                <li><a href="about.html"
+                        style="display: block; padding: 1rem; color: #333; text-decoration: none;">About Us</a></li>
+                <li><a href="contact.html"
+                        style="display: block; padding: 1rem; color: #333; text-decoration: none;">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 data-aos="fade-up">Gujarat's Trusted Land Survey Experts</h1>
+            <p class="subheadline" data-aos="fade-up" data-aos-delay="200">Precision Measurements for Real Estate,
+                Construction &amp; Infrastructure</p>
+
+            <div class="hero-ctas" data-aos="fade-up" data-aos-delay="400">
+                <a href="inquiry.html" class="btn-primary">Book a Survey</a>
+                <a href="services.html" class="btn-secondary">Our Services</a>
+            </div>
+
+            <!-- Bottom ticker inside hero as per spec -->
+            <!-- <div style="margin-top: 4rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; font-size: 0.95rem; opacity: 0.9;"
+                data-aos="fade-up" data-aos-delay="600">
+                <div><strong>500+</strong> Projects Completed</div>
+                <div><strong>18+</strong> Years Experience</div>
+                <div><strong>19</strong> Services Offered</div>
+                <div><strong>21+</strong> Trusted Clients</div> -->
+        </div>
+        </div>
+    </section>
+
+    <!-- STATS / TRUST STRIP -->
+    <section class="stats" id="stats">
+        <div class="stats-grid">
+            <div class="stat-item" data-aos="fade-up">
+                <i class="fas fa-map-marked-alt stat-icon"></i>
+                <div class="stat-number" id="projects">0</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-calendar-alt stat-icon"></i>
+                <div class="stat-number" id="years">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-tools stat-icon"></i>
+                <div class="stat-number" id="services">0</div>
+                <div class="stat-label">Services Offered</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-users stat-icon"></i>
+                <div class="stat-number" id="clients">0</div>
+                <div class="stat-label">Trusted Clients</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Land Surveying Services</h2>
+                <p style="color: var(--muted); max-width: 600px; margin: 1rem auto 0;">Comprehensive geospatial
+                    solutions for every project requirement</p>
+            </div>
+
+            <div class="services-grid" id="servicesTop">
+                <!-- Populated by JS -->
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <button onclick="toggleAllServices()" id="showAllBtn" class="cta-button"
+                    style="background: transparent; border: 2px solid var(--primary-gold); color: var(--primary-gold);">
+                    Show All 19 Services
+                </button>
+            </div>
+
+            <div class="services-grid" id="servicesAll" style="display: none; margin-top: 3rem;">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK PROCESS -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>How It Works — 5 Simple Steps</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="steps">
+                    <div class="step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step-circle">01</div>
+                        <h3 style="color: var(--primary-dark);">Submit Inquiry</h3>
+                        <p>Client submits inquiry via website, app, or phone. Provide property details and survey type.
+                        </p>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-circle">02</div>
+                        <h3 style="color: var(--primary-dark);">Team Allocation</h3>
+                        <p>Appropriate field team is assigned based on project type, location, and timeline.</p>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step-circle">03</div>
+                        <h3 style="color: var(--primary-dark);">On-Site Survey</h3>
+                        <p>Expert team visits site at your preferred time and collects precise measurements.</p>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="400">
+                        <div class="step-circle">04</div>
+                        <h3 style="color: var(--primary-dark);">Data Processing</h3>
+                        <p>Raw data is verified, processed, and compiled into final drawings &amp; reports.</p>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="500">
+                        <div class="step-circle">05</div>
+                        <h3 style="color: var(--primary-dark);">Report Delivery</h3>
+                        <p>Final survey documents delivered digitally or physically. Project closed.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why" id="why">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Why Choose Saffron Surveyors</h2>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card" data-aos="fade-up">
+                    <i class="fas fa-ruler-combined" style="font-size: 2.5rem; color: var(--primary-gold);"></i>
+                    <h3>Precision Instruments</h3>
+                    <p>Latest Total Station, GNSS &amp; Theodolite equipment for highest accuracy.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-user-tie" style="font-size: 2.5rem; color: var(--primary-gold);"></i>
+                    <h3>Expert Certified Team</h3>
+                    <p>Well-trained, punctual, and professionally presented surveyors.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-clock" style="font-size: 2.5rem; color: var(--primary-gold);"></i>
+                    <h3>Punctual &amp; Professional</h3>
+                    <p>Always on time. Professional conduct that clients trust.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-mobile-alt" style="font-size: 2.5rem; color: var(--primary-gold);"></i>
+                    <h3>Mobile App Booking</h3>
+                    <p>Book surveys instantly from our Android app.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-map-marker-alt" style="font-size: 2.5rem; color: var(--primary-gold);"></i>
+                    <h3>Serving Gujarat Since 2006</h3>
+                    <p>18+ years of local expertise across Ahmedabad &amp; surrounding districts.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-truck-fast" style="font-size: 2.5rem; color: var(--primary-gold);"></i>
+                    <h3>Fast Turnaround Time</h3>
+                    <p>Quick processing and delivery of survey reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 style="color: white;">What Our Clients Say</h2>
+            </div>
+
+            <div class="swiper" id="testimonialSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Populated by JS -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENT LOGOS MARQUEE -->
+    <section class="clients">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Trusted by 21+ Organizations Across Gujarat</h2>
+            </div>
+
+            <div class="marquee">
+                <div class="marquee-content" id="logoMarquee">
+                    <!-- Populated by JS with real images -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENT LOGO CAROUSEL SECTION -->
+    <section class="logo-carousel-section" style="background: white; padding: 50px 0 100px;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p
+                    style="text-transform: uppercase; color: var(--primary-gold); font-weight: 700; letter-spacing: 2px; font-size: 14px; margin-bottom: 2rem;">
+                    Our Esteemed Partners</p>
+            </div>
+            <div class="swiper" id="clientSwiper">
+                <div class="swiper-wrapper" id="logoCarouselWrapper">
+                    <!-- Populated by JS -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INQUIRY / CTA STRIP -->
+    <section class="cta-strip">
+        <div class="container"
+            style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; justify-content: space-between;">
+            <div>
+                <h2 style="color: white; font-size: 2.2rem;">Ready to Get Your Land Surveyed?</h2>
+                <p style="opacity: 0.9; font-size: 1.2rem;">Professional, accurate, and on time — every time.</p>
+            </div>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="tel:+919979876170" class="cta-button"
+                    style="background: transparent; border: 2px solid white; color: white;">Call +91 99798 76170</a>
+                <a href="inquiry.html" class="cta-button">Send Inquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid container">
+            <div>
+                <div class="logo" style="color: white; font-size: 28px; margin-bottom: 1rem;">
+                    <span class="saffron">SAFFRON</span>
+                    <span class="surveyors">SURVEYORS</span>
+                </div>
+                <p>A Complete Land Survey Solution. Precision. Professionalism. Technology.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Since 2006 • Ahmedabad, Gujarat</p>
+            </div>
+
+            <div>
+                <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+                <ul style="list-style: none; line-height: 2;">
+                    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                    <li><a href="services.html" style="color: white; text-decoration: none;">Services</a></li>
+                    <li><a href="process.html" style="color: white; text-decoration: none;">Work Process</a></li>
+                    <li><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
+                    <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 style="margin-bottom: 1rem;">Services</h4>
+                <ul style="list-style: none; line-height: 2; font-size: 0.95rem;">
+                    <li>Boundary Marking</li>
+                    <li>FP Marking</li>
+                    <li>Plot Demarcation</li>
+                    <li>Contour Survey</li>
+                    <li>Layout Marking</li>
+                    <li>and 14 more...</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 style="margin-bottom: 1rem;">Contact Us</h4>
+
+                <!-- <p><a href="https://wa.me/919979876170" style="color: white;">WhatsApp</a></p> -->
+                <p>saffronsurveyors@gmail.com</p>
+                <p>19-23, 4th Floor, Vandemataram Arcade,<br>Gota, Ahmedabad - 382481</p>
+                <p><a href="tel:+919979876170" style="color: white;">+91 99798 76170</a></p>
+                <a href="https://maps.google.com" target="_blank" style="color: var(--primary-gold);">View on Google
+                    Maps</a>
+            </div>
+        </div>
+
+        <div
+            style="border-top: 2px solid #0F3460; margin-top: 4rem; padding-top: 1.5rem; text-align: center; font-size: 0.85rem; opacity: 0.7;">
+            © 2026 Saffron Surveyors • All Rights Reserved • Designed By Yash Web
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/919979876170?text=Hi%2C%20I%20am%20interested%20in%20your%20surveying%20services"
+        class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Inquiry Modal (for Get Quote CTA) -->
+    <div id="inquiryModal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10000; align-items: center; justify-content: center;">
+        <div
+            style="background: white; max-width: 500px; width: 90%; border-radius: 8px; padding: 2rem; position: relative;">
+            <span onclick="hideInquiryModal()"
+                style="position: absolute; top: 15px; right: 20px; font-size: 28px; cursor: pointer;">&times;</span>
+            <h3 style="color: var(--primary-dark);">Quick Inquiry</h3>
+            <form id="modalForm" onsubmit="handleModalSubmit(event)">
+                <input type="text" placeholder="Your Name" required
+                    style="width: 100%; padding: 12px; margin: 12px 0; border: 1px solid #ddd; border-radius: 4px;">
+                <input type="tel" placeholder="Phone Number" required
+                    style="width: 100%; padding: 12px; margin: 12px 0; border: 1px solid #ddd; border-radius: 4px;">
+                <select style="width: 100%; padding: 12px; margin: 12px 0; border: 1px solid #ddd; border-radius: 4px;">
+                    <option>Boundary Marking</option>
+                    <option>FP Marking</option>
+                    <option>Plot Demarcation</option>
+                    <option>Contour Survey</option>
+                    <option>Other</option>
+                </select>
+                <textarea placeholder="Project details / location" rows="4"
+                    style="width: 100%; padding: 12px; margin: 12px 0; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                <button type="submit" class="cta-button" style="width: 100%;">Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS Initialization
+        AOS.init({ duration: 800, once: true });
+
+        // Navbar scroll effect
+        function handleScroll() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 80) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+
+        // Mobile menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Counter animation
+        function animateCounters() {
+            const counters = [
+                { id: 'projects', target: 500, suffix: '+' },
+                { id: 'years', target: 18, suffix: '+' },
+                { id: 'services', target: 19 },
+                { id: 'clients', target: 21, suffix: '+' }
+            ];
+
+            counters.forEach(counter => {
+                const element = document.getElementById(counter.id);
+                let count = 0;
+                const increment = Math.ceil(counter.target / 60);
+
+                const timer = setInterval(() => {
+                    count += increment;
+                    if (count >= counter.target) {
+                        count = counter.target;
+                        clearInterval(timer);
+                    }
+                    element.textContent = count + (counter.suffix || '');
+                }, 30);
+            });
+        }
+
+        // Trigger counters when stats section is visible
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.disconnect();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        // Services data (all 19 services with short descriptions)
+        const servicesData = [
+            { icon: "fa-map-pin", title: "Boundary Marking", desc: "Accurate boundary demarcation for plots and farms" },
+            { icon: "fa-ruler", title: "Layout Marking", desc: "Precise layout marking for construction projects" },
+            { icon: "fa-mountain", title: "Contour Survey", desc: "Detailed contour and topographic analysis" },
+            { icon: "fa-stone", title: "Survey Stone Marking", desc: "Survey stone placement and verification" },
+            { icon: "fa-columns", title: "Column Marking", desc: "Column and structural point marking" },
+            { icon: "fa-drafting-compass", title: "Detailed Survey", desc: "Comprehensive site and land detailed survey" },
+            { icon: "fa-map", title: "FP Marking", desc: "Final plot marking as per approved plans" },
+            { icon: "fa-road", title: "Centre Line Demarcation", desc: "Centre line marking for roads and buildings" },
+            { icon: "fa-search", title: "Reference Survey", desc: "Reference and control point surveys" },
+            { icon: "fa-draw-polygon", title: "Plot Demarcation", desc: "Plot boundary and demarcation services" },
+            { icon: "fa-thumbtack", title: "Pile Point Marking", desc: "Pile foundation point marking" },
+            { icon: "fa-map-marked", title: "Site Survey", desc: "Full site measurement and analysis" },
+            { icon: "fa-cubes", title: "Block Demarcation", desc: "Block and sector demarcation" },
+            { icon: "fa-road", title: "Road Marking", desc: "Road alignment and marking surveys" },
+            { icon: "fa-draw-polygon", title: "Plot Survey", desc: "Individual plot survey and measurement" },
+            { icon: "fa-wall", title: "Compound Wall Marking", desc: "Compound wall boundary marking" },
+            { icon: "fa-building", title: "Club House Marking", desc: "Clubhouse and amenity marking" },
+            { icon: "fa-cube", title: "Block Marking", desc: "Block level marking and layout" },
+            { icon: "fa-tree", title: "Tree Marking", desc: "Tree survey and marking services" }
+        ];
+
+        // Populate services (top 6 + all)
+        function populateServices() {
+            const topGrid = document.getElementById('servicesTop');
+            const allGrid = document.getElementById('servicesAll');
+
+            // Top 6
+            servicesData.slice(0, 6).forEach(service => {
+                const card = document.createElement('div');
+                card.className = 'service-card';
+                card.innerHTML = `
+                    <i class="fas ${service.icon} service-icon"></i>
+                    <h3>${service.title}</h3>
+                    <p style="color: var(--muted);">${service.desc}</p>
+                `;
+                topGrid.appendChild(card);
+            });
+
+            // All 19
+            servicesData.forEach(service => {
+                const card = document.createElement('div');
+                card.className = 'service-card';
+                card.innerHTML = `
+                    <i class="fas ${service.icon} service-icon"></i>
+                    <h3>${service.title}</h3>
+                    <p style="color: var(--muted);">${service.desc}</p>
+                `;
+                allGrid.appendChild(card);
+            });
+        }
+
+        function toggleAllServices() {
+            const allSection = document.getElementById('servicesAll');
+            const btn = document.getElementById('showAllBtn');
+
+            if (allSection.style.display === 'none') {
+                allSection.style.display = 'grid';
+                btn.textContent = 'Hide All Services';
+            } else {
+                allSection.style.display = 'none';
+                btn.textContent = 'Show All 19 Services';
+            }
+        }
+
+        // Testimonials data (exact from document)
+        const testimonials = [
+            {
+                quote: "Nice work very useful to calculate area for surveyor. Team Response is Good.",
+                name: "Mr. Abhishek Panchal",
+                role: "Architect"
+            },
+            {
+                quote: "Excellent service all the way around from start to finish. Keep up the GREAT work!",
+                name: "Mr. Chirag Shah",
+                role: "Client"
+            },
+            {
+                quote: "The only surveyor we trust for our complex site dimensions... I would never hesitate to recommend them.",
+                name: "Mr. Shehzad Irani",
+                role: "Tensile Structures Engineer"
+            },
+            {
+                quote: "Good team work.... Very perfect land measure work. I am really proud of your team work",
+                name: "Mrs. Vruti Patel",
+                role: "Client"
+            },
+            {
+                quote: "Excellent support and best technical survey in Gujarat",
+                name: "Mr. Harry Shah",
+                role: "Client"
+            }
+        ];
+
+        // Initialize Swiper for testimonials
+        function initTestimonialSwiper() {
+            const wrapper = document.querySelector('#testimonialSwiper .swiper-wrapper');
+
+            testimonials.forEach(test => {
+                const slide = document.createElement('div');
+                slide.className = 'swiper-slide';
+                slide.innerHTML = `
+                    <div class="testimonial-card">
+                        <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 1.5rem;">“${test.quote}”</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong>${test.name}</strong><br>
+                                <span style="color: #E8A000;">${test.role}</span>
+                            </div>
+                            <div style="color: #E8A000; font-size: 1.4rem;">★★★★★</div>
+                        </div>
+                    </div>
+                `;
+                wrapper.appendChild(slide);
+            });
+
+            new Swiper('#testimonialSwiper', {
+                loop: true,
+                autoplay: { delay: 4000, disableOnInteraction: false },
+                pagination: { el: '.swiper-pagination', clickable: true },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                slidesPerView: 1,
+                spaceBetween: 30,
+                breakpoints: {
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 }
+                }
+            });
+        }
+
+        // Client logos marquee (real images)
+        function populateLogos() {
+            const marquee = document.getElementById('logoMarquee');
+            const logoFiles = ["Savvy.png", "arista.png", "aroma.png", "auda.png", "creation.png", "gayatri.png", "iim.png", "iscon.png", "kuke.png", "matri.png", "nishant.png", "pine.png", "sacds.png", "sal.png", "sampad.png", "shanti.png", "shilp.png", "ss.png", "swati.png", "vyapti.png"];
+
+            let logosHTML = `<div style="display: inline-flex; gap: 5rem; align-items: center; padding: 0 5rem;">`;
+            logoFiles.forEach(file => {
+                logosHTML += `<img src="img/${file}" alt="${file.split('.')[0]}" style="height: 90px; width: auto; max-width: 180px; filter: none; opacity: 1; transition: 0.3s; margin: 0 2rem;">`;
+            });
+            logosHTML += `</div>`;
+
+            marquee.innerHTML = logosHTML + logosHTML;
+        }
+
+        // Modal functions
+        function showInquiryModal() {
+            document.getElementById('inquiryModal').style.display = 'flex';
+        }
+
+        function hideInquiryModal() {
+            document.getElementById('inquiryModal').style.display = 'none';
+        }
+
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            alert("✅ Inquiry submitted successfully! Our team will contact you within 2 hours.");
+            hideInquiryModal();
+            // In real implementation this would POST to backend
+        }
+
+        // Main initialization
+        window.onload = function () {
+            populateServices();
+            initTestimonialSwiper();
+            populateLogos();
+
+            // Observe stats for counter animation
+            const statsSection = document.getElementById('stats');
+            statsObserver.observe(statsSection);
+
+            console.log('%c✅ Saffron Surveyors redesigned website (index.html) loaded successfully!', 'color:#E8A000; font-size:16px; font-weight:700');
+        };
+    </script>
+</body>
+
+</html>

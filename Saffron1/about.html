@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about Saffron Surveyors - Gujarat's trusted land surveying company since 2006. Professional team, modern equipment, and 500+ successful projects in Ahmedabad and across Gujarat.">
+    <title>About Us | Saffron Surveyors - Land Survey Ahmedabad</title>
+
+    <!-- Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-gold: #E8A000;
+            --primary-dark: #0F3460;
+            --deep-bg: #1A1A2E;
+            --off-white: #F8F9FA;
+            --body-text: #333333;
+            --muted: #666666;
+            --whatsapp: #25D366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--body-text);
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* NAVIGATION (Shared) */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            height: 72px;
+            display: flex;
+            align-items: center;
+        }
+
+        .page-nav {
+            background: #fff;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            height: 72px;
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            text-decoration: none;
+        }
+
+        .logo .saffron {
+            color: var(--primary-gold);
+        }
+
+        .logo .surveyors {
+            color: var(--primary-dark);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary-gold);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .phone-link {
+            color: var(--primary-dark);
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .cta-button {
+            background: var(--primary-gold);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        /* PAGE HERO */
+        .page-hero {
+            padding: 140px 0 80px;
+            background: var(--primary-dark);
+            color: white;
+            text-align: center;
+        }
+
+        .about-story {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .story-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .mission-vision {
+            padding: 100px 0;
+            background: var(--off-white);
+        }
+
+        .mv-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .mv-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        /* FOOTER (Shared) */
+        footer {
+            background: var(--deep-bg);
+            color: white;
+            padding: 80px 0 30px;
+        }
+
+        .footer-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 3rem;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            background: var(--whatsapp);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 9999;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="page-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="saffron">SAFFRON</span>
+                <span class="surveyors">SURVEYORS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="tel:+919979876170" class="phone-link"><i class="fas fa-phone"></i> +91 99798 76170</a>
+                <a href="inquiry.html" class="cta-button">Get Quote</a>
+                <div class="hamburger" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Gujarat's Trusted Surveying Experts</h1>
+            <p data-aos="fade-up" data-aos-delay="200" style="font-size: 1.2rem; opacity: 0.9; margin-top: 1rem;">
+                Precision Since 2006 • Ahmedabad & Beyond</p>
+        </div>
+    </section>
+
+    <section class="about-story">
+        <div class="story-grid">
+            <div data-aos="fade-right">
+                <h2 style="color: var(--primary-dark); font-size: 42px; margin-bottom: 1.5rem;">Our Story</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                    Founded in 2006, Saffron Surveyors has grown from a small surveying firm into Gujarat's most trusted
+                    land surveying partner.
+                    With over 18 years of experience, we have successfully completed 500+ projects across Ahmedabad and
+                    surrounding districts.
+                </p>
+                <p style="font-size: 1.1rem;">
+                    Our commitment to accuracy, professionalism, and timely delivery has earned us the trust of
+                    architects, real estate developers,
+                    civil engineers, and government bodies throughout the state.
+                </p>
+                <div style="margin-top: 2rem;">
+                    <a href="contact.html" class="cta-button">Get In Touch</a>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <img src="https://picsum.photos/id/201/800/600" alt="Saffron Surveyors team conducting land survey"
+                    style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-vision">
+        <div class="mv-grid">
+            <div class="mv-card" data-aos="fade-up">
+                <i class="fas fa-bullseye"
+                    style="font-size: 3rem; color: var(--primary-gold); margin-bottom: 1rem;"></i>
+                <h3>Mission</h3>
+                <p>To deliver the highest standard of land surveying services with precision, integrity, and modern
+                    technology, helping our clients build with confidence.</p>
+            </div>
+            <div class="mv-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-eye" style="font-size: 3rem; color: var(--primary-gold); margin-bottom: 1rem;"></i>
+                <h3>Vision</h3>
+                <p>To be the most preferred and technologically advanced land surveying company in Gujarat, known
+                    for reliability and excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid container">
+            <div>
+                <div class="logo" style="color: white; font-size: 28px; margin-bottom: 1rem;">
+                    <span class="saffron">SAFFRON</span>
+                    <span class="surveyors">SURVEYORS</span>
+                </div>
+                <p>Gujarat's most trusted name in land surveying. Precision, professionalism, and advanced technology
+                    since 2006.</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+                <ul style="list-style: none; line-height: 2;">
+                    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                    <li><a href="services.html" style="color: white; text-decoration: none;">Services</a></li>
+                    <li><a href="process.html" style="color: white; text-decoration: none;">Process</a></li>
+                    <li><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
+                    <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem;">Contact</h4>
+                <p>saffronsurveyors@gmail.com</p>
+                <p>+91 99798 76170</p>
+                <p>Gota, Ahmedabad, Gujarat</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 4rem; opacity: 0.7; font-size: 0.9rem;">
+            © 2026 Saffron Surveyors • All Rights Reserved
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919979876170" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        function toggleMobileMenu() {
+            alert("Mobile Menu coming soon!");
+        }
+    </script>
+</body>
+
+</html>

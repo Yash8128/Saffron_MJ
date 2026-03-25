@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffron Surveyors | Precision Land Surveying • Ahmedabad</title>
+    <meta name="description"
+        content="Gujarat's trusted land surveying experts since 2006. Precision, Professionalism, Technology. FP Marking, Boundary Survey, Contour Survey & more.">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Inter:wght@400;500;600&amp;family=Work+Sans:wght@400;500&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: [],
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b6a00',
+                        'primary-container': '#74b72c',
+                        surface: '#f9f9f9',
+                        'surface-container-low': '#f3f3f4',
+                        'surface-container-lowest': '#ffffff',
+                        'surface-container-highest': '#e2e2e2',
+                        'on-surface': '#1a1c1c',
+                        'outline-variant': '#c1cab3',
+                    },
+                    fontFamily: {
+                        headline: ['Plus Jakarta Sans', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                        label: ['Work Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .gradient-btn {
+            background: linear-gradient(135deg, #3b6a00, #74b72c);
+        }
+
+        .hero-bg {
+            background-image: url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .no-line {
+            border: none;
+        }
+
+        .asymmetric {
+            margin-left: 5%;
+        }
+    </style>
+</head>
+
+<body class="bg-surface font-body text-on-surface overflow-x-hidden">
+
+    <!-- Glass Top Navigation -->
+    <header class="sticky top-0 z-50 bg-surface/80 glass border-b border-outline-variant/20">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <!-- <span class="text-3xl text-primary material-symbols-outlined">architecture</span> -->
+                <div>
+                    <span class="font-headline text-2xl font-extrabold tracking-tighter text-on-surface">Saffron</span>
+                    <span class="font-headline text-2xl font-extrabold tracking-tighter text-primary">Surveyors</span>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-10 text-sm font-label uppercase tracking-widest">
+                <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                <a href="services.html" class="hover:text-primary transition-colors">Services</a>
+                <a href="process.html" class="hover:text-primary transition-colors">Process</a>
+                <a href="about.html" class="hover:text-primary transition-colors">About</a>
+                <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="tel:+919979876170" class="text-on-surface font-medium">+91 99798 76170</a>
+                <a href="inquiry.html"
+                    class="gradient-btn text-white px-8 py-3 rounded-2xl font-label tracking-widest text-sm font-bold hover:scale-105 transition-transform">Get
+                    Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero – Architectural Ledger -->
+    <section class="hero-bg min-h-screen flex items-center relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/70"></div>
+
+        <div class="max-w-screen-2xl mx-auto px-8 md:px-16 relative z-10 pt-20">
+            <div class="max-w-2xl">
+                <span
+                    class="inline-block font-label text-xs tracking-[0.125em] bg-white/90 text-primary px-6 py-2 rounded-full mb-6">Since
+                    2006 • Ahmedabad, Gujarat</span>
+
+                <h1
+                    class="font-headline text-6xl md:text-7xl lg:text-8xl font-extrabold leading-none tracking-tighter text-white">
+                    Precision that builds<br>India's future.
+                </h1>
+
+                <p class="mt-8 text-xl text-white/90 max-w-md">
+                    Trusted land surveying partner for architects, developers and engineers across Gujarat.
+                </p>
+
+                <div class="mt-12 flex flex-wrap gap-4">
+                    <a href="inquiry.html"
+                        class="gradient-btn text-white px-10 py-5 rounded-3xl font-headline text-lg font-bold inline-flex items-center gap-3 hover:scale-105 transition-transform">
+                        Start a Survey Inquiry
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                    <a href="services.html"
+                        class="border border-white/70 text-white px-10 py-5 rounded-3xl font-medium hover:bg-white/10 transition-colors">Explore
+                        Services</a>
+                </div>
+
+                <!-- Trust bar -->
+                <div class="mt-20 grid grid-cols-3 gap-8 text-white/80 text-sm">
+                    <div>500+ Projects Delivered</div>
+                    <div>18+ Years of Precision</div>
+                    <div>19 Specialized Services</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Asymmetric floating element -->
+        <!-- <div
+            class="absolute bottom-12 right-12 hidden lg:block bg-white/90 backdrop-blur-xl p-8 rounded-3xl shadow-2xl max-w-xs">
+            <div class="flex items-center gap-4">
+                <span class="text-5xl">📍</span>
+                <div>
+                <div class="font-medium text-on-surface">Current Project</div>
+                <div class="text-primary font-semibold">Gota – Residential Township Boundary &amp; Layout</div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- Services Overview (Bento-style with elevation) -->
+    <section class="py-32 bg-surface-container-low">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <span class="font-label uppercase tracking-widest text-primary text-sm">Our Expertise</span>
+                    <h2 class="font-headline text-5xl font-extrabold tracking-tight mt-3">Specialist Surveying Solutions
+                    </h2>
+                </div>
+                <a href="services.html" class="text-primary font-medium flex items-center gap-2 group">
+                    View all 19 services
+                    <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cards use surface elevation only -->
+                <div class="bg-surface-container-lowest rounded-3xl p-10 hover:-translate-y-2 transition-transform">
+                    <span class="material-symbols-outlined text-4xl text-primary">map</span>
+                    <h3 class="font-headline text-2xl font-bold mt-8">Boundary &amp; Demarcation</h3>
+                    <p class="text-on-surface/70 mt-4">Plot demarcation, boundary marking, survey stone placement.</p>
+                </div>
+                <div class="bg-surface-container-lowest rounded-3xl p-10 hover:-translate-y-2 transition-transform">
+                    <span class="material-symbols-outlined text-4xl text-primary">construction</span>
+                    <h3 class="font-headline text-2xl font-bold mt-8">Layout &amp; Construction</h3>
+                    <p class="text-on-surface/70 mt-4">Layout marking, column marking, pile point, centre line
+                        demarcation.</p>
+                </div>
+                <div class="bg-surface-container-lowest rounded-3xl p-10 hover:-translate-y-2 transition-transform">
+                    <span class="material-symbols-outlined text-4xl text-primary">landscape</span>
+                    <h3 class="font-headline text-2xl font-bold mt-8">Topographic &amp; Analysis</h3>
+                    <p class="text-on-surface/70 mt-4">Contour survey, detailed site survey, reference survey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5-Step Process -->
+    <section class="py-32 bg-surface">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="font-headline text-5xl font-extrabold tracking-tight text-center mb-16">How We Work – 5 Simple
+                Steps</h2>
+
+            <div class="grid md:grid-cols-5 gap-8">
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 mx-auto bg-primary text-white rounded-2xl flex items-center justify-center text-3xl font-bold">
+                        01</div>
+                    <h4 class="font-headline mt-6">Inquiry</h4>
+                    <p class="text-sm text-on-surface/70 mt-3">Submit details via website, app or call.</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 mx-auto bg-primary text-white rounded-2xl flex items-center justify-center text-3xl font-bold">
+                        02</div>
+                    <h4 class="font-headline mt-6">Team Allotment</h4>
+                    <p class="text-sm text-on-surface/70 mt-3">Expert team assigned based on your project.</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 mx-auto bg-primary text-white rounded-2xl flex items-center justify-center text-3xl font-bold">
+                        03</div>
+                    <h4 class="font-headline mt-6">On-Site Survey</h4>
+                    <p class="text-sm text-on-surface/70 mt-3">Precise measurements using modern instruments.</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 mx-auto bg-primary text-white rounded-2xl flex items-center justify-center text-3xl font-bold">
+                        04</div>
+                    <h4 class="font-headline mt-6">Data Processing</h4>
+                    <p class="text-sm text-on-surface/70 mt-3">Verification and final compilation.</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 mx-auto bg-primary text-white rounded-2xl flex items-center justify-center text-3xl font-bold">
+                        05</div>
+                    <h4 class="font-headline mt-6">Delivery</h4>
+                    <p class="text-sm text-on-surface/70 mt-3">Reports delivered digitally or physically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-32 bg-surface-container-low">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="font-headline text-5xl font-extrabold tracking-tight text-center mb-16">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-3xl">
+                    <p class="italic">"Nice work... Team Response is Good."</p>
+                    <div class="mt-8 font-medium">— Mr. Abhishek Panchal, Architect</div>
+                </div>
+                <div class="bg-white p-10 rounded-3xl">
+                    <p class="italic">"The only surveyor we trust for complex site dimensions."</p>
+                    <div class="mt-8 font-medium">— Mr. Shehzad Irani, Tensile Structures Engineer</div>
+                </div>
+                <div class="bg-white p-10 rounded-3xl">
+                    <p class="italic">"Excellent support and best technical survey in Gujarat."</p>
+                    <div class="mt-8 font-medium">— Mr. Harry Shah</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-28 bg-on-surface text-white">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center">
+            <h2 class="font-headline text-5xl font-extrabold">Ready for precise measurements?</h2>
+            <a href="inquiry.html"
+                class="mt-10 inline-block gradient-btn text-white px-12 py-6 rounded-3xl text-lg font-bold">Initiate
+                Your Survey Today</a>
+        </div>
+    </section>
+
+    <!-- Glass Bottom Navigation (Mobile) -->
+    <nav
+        class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 bg-surface/80 glass backdrop-blur-2xl rounded-3xl shadow-2xl px-8 py-4 flex justify-around w-[90%] z-50">
+        <a href="index.html" class="flex flex-col items-center text-primary">
+            <span class="material-symbols-outlined">home</span>
+            <span class="text-[10px] font-label">Home</span>
+        </a>
+        <a href="services.html" class="flex flex-col items-center text-on-surface/70">
+            <span class="material-symbols-outlined">map</span>
+            <span class="text-[10px] font-label">Services</span>
+        </a>
+        <a href="process.html" class="flex flex-col items-center text-on-surface/70">
+            <span class="material-symbols-outlined">timeline</span>
+            <span class="text-[10px] font-label">Process</span>
+        </a>
+        <a href="contact.html" class="flex flex-col items-center text-on-surface/70">
+            <span class="material-symbols-outlined">call</span>
+            <span class="text-[10px] font-label">Contact</span>
+        </a>
+    </nav>
+
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js" type="module"></script>
+</body>
+
+</html>
